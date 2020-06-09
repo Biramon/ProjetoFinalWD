@@ -14,6 +14,7 @@ body {
     background-color: #c2c2c2;
     position: relative;
     margin: auto;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.5);
 }
 
 #cabecalho {
@@ -25,19 +26,38 @@ body {
     height: 750px;
     background-color: #686868;
     padding: 50px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* ----- RODAPÉ ----- */
 #rodape {
     height: 150px;
     width: 800px;
     background-color: #323232;
     position: absolute;
     bottom: 0;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5) inset;
 }
 
-/* ----- CA -----*/
+.nota-rodape {
+    color: #c2c2c2;   
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#rodape > hr {
+    background-color: #c2c2c2;
+    width: 200px;
+    height: 1px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----- CABEÇALHO -----*/
 #conteudo-cabecalho {
-    height: 150px;
+    height: 160px;
     line-height: 150px;
 }
 
@@ -50,11 +70,43 @@ body {
 
 /* ----- MENUS -----*/
 #menus {
-    background-color: #c2c2c2;
-    height: 50px;
+    
+    height: 40px;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#menus > ul {
+    list-style-type: none;
+}
+
+#menus > ul > li {
+    display: inline;
+    float: left;
+    height: 40px;
+    width: 152px;
+    margin: 0px 5px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #1B1c1c;
+}
+
+#menus > ul > li > a {
+    color: #c2c2c2;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+#menus > ul > li > a.ativa {
+    background-color: #c2c2c2;
+    color: #1B1C1C;
+}
+
+#menus > ul > li > a:hover{
+    background-color: #c2c2c2;
+    color: #1B1C1C;
 }
 
 /* ----- BANNER ----- */
@@ -172,4 +224,3 @@ body {
     vertical-align: middle;
     padding-right: 10px;
 }
-
